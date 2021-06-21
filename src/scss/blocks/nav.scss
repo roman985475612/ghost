@@ -1,0 +1,51 @@
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 0 $nav-height;
+    padding: 0 30px;
+    width: 100%;
+    color: #fff;
+    background-color: transparent;
+
+    &__brand {
+        margin-left: 20px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    &__menu {
+        @include clear-list;
+        display: flex;
+    }
+
+    &__item {
+        margin: 22px 15px 5px;
+    }
+
+    &__link {
+        color: #fff;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            background-color: #fff;
+            height: 1px;
+            transform: scale(0);
+            transition: all .3s;
+            margin-top: 15px;
+            margin-left: 0;
+            border-top: 0;
+        }
+
+        &:hover::after {
+            transform: scale(1);
+        }
+    }
+
+    // border
+}

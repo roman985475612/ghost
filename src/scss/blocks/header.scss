@@ -1,0 +1,18 @@
+.header {
+    @include flex-center;
+    flex: 1 0 auto;
+    background: url('../img/header_bg.webp') no-repeat;
+    background-size: cover;
+    color: #fff;
+
+    .header__title {
+        margin-bottom: 15px;
+        font-size: 72px;
+        font-weight: bold;
+    }
+
+    .header__subtitle {
+        font-style: italic;
+        font-size: 32px;
+    }
+}

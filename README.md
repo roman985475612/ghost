@@ -1,0 +1,2 @@
+# GHost Host
+## Simple landing
