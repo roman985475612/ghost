@@ -14,3 +14,15 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin package-color($color: #fff) {
+    border-top: 5px solid $color;
+
+    .item__value {
+        color: $color;
+    }
+
+    .tile__cost {
+        border-bottom: 3px solid $color;
+    }
+}
