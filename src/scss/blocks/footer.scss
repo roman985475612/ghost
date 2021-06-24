@@ -1,0 +1,111 @@
+.footer {
+    background-color: $footer-bg-color;
+    padding-bottom: 10px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+        border-bottom: 2px solid $buy-border-color;
+    }
+
+    &__brand {
+        color: $buy-border-color;
+    }
+
+    &__nav {
+        @include clear-list;
+        display: flex;
+
+        .nav__item {
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        .nav__link {
+            text-transform: uppercase;
+            color: $buy-border-color;
+            transition: .3s all;
+
+            &:hover {
+                color: #fff;
+            }
+
+            &::after {
+                display: none;
+            }
+
+            &::after:hover {
+                display: none;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        padding: 20px 0;
+        font-size: 12px;
+        color: $buy-border-color;
+    }
+
+    &__block {
+        width: (100% / 3);
+        padding: 20px 0;
+    }
+
+    &__text {
+        padding-right: 20px;
+        line-height: 1.7;
+    }
+
+    &__map {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 20px;
+        border-right: 1px solid $buy-border-color;
+        border-left: 1px solid $buy-border-color;
+    }
+
+    &__list {
+        @include clear-list;
+        width: 50%;
+        font-size: 13px;
+
+        .list__item {
+            padding: 5px;
+
+            &:hover {
+                color: #fff;
+                .list__link {
+                    color: #fff;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .list__icon {
+
+        }
+
+        .list__link {
+            margin-left: 5px;
+            color: $buy-border-color;
+            transition: .5s all;
+        }
+    }
+
+    &__contact {
+        padding-left: 20px;
+
+        .contact__item {
+            display: block;
+            margin-bottom: 10px;
+            color: $buy-border-color;
+        }
+
+        .contact__icon {
+            margin-right: 5px;
+            color: $buy-border-color;
+        }
+    }
+}

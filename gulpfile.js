@@ -41,6 +41,7 @@ function style() {
 function script() {
     return gulp.src('./src/js/**/*.js')
         .pipe(gulp.dest('./build/js'))
+        .pipe(browserSync.stream())
 }
 
 function imageToWebp() {
@@ -67,6 +68,7 @@ function watch() {
     })
     gulp.watch('./src/**/*.html', html)
     gulp.watch('./src/scss/**/*.scss', style)
+    gulp.watch('./src/js/**/*.js', script)
 }
 
 let build          = gulp.parallel(html, style, script, image, imageToWebp, fonts)

@@ -231,42 +231,42 @@
         <!-- /.about -->
 
         <section class="slider">
-            <div class="slider__slide">
+            <div class="slider__slide" data-slide="1">
                 <div class="slider__quote">
                     1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci labore reprehenderit ipsa deleniti eum.
                 </div>
                 <div class="slider__info">
                     <div class="slider__name">John Doe 1</div>
                     <div class="slider__icons">
-                        <span class="slider__icon slider__icon--active"></span>
-                        <span class="slider__icon"></span>
-                        <span class="slider__icon"></span>
+                        <span class="slider__icon slider__icon--active" data-id="1"></span>
+                        <span class="slider__icon" data-id="2"></span>
+                        <span class="slider__icon" data-id="3"></span>
                     </div>
                 </div>
             </div>
-            <div class="slider__slide hide">
+            <div class="slider__slide hide" data-slide="2">
                 <div class="slider__quote">
                     2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci labore reprehenderit ipsa deleniti eum.
                 </div>
                 <div class="slider__info">
                     <div class="slider__name">John Doe 2</div>
                     <div class="slider__icons">
-                        <span class="slider__icon"></span>
-                        <span class="slider__icon slider__icon--active"></span>
-                        <span class="slider__icon"></span>
+                        <span class="slider__icon" data-id="1"></span>
+                        <span class="slider__icon slider__icon--active" data-id="2"></span>
+                        <span class="slider__icon" data-id="3"></span>
                     </div>
                 </div>
             </div>
-            <div class="slider__slide hide">
+            <div class="slider__slide hide" data-slide="3">
                 <div class="slider__quote">
                     3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci labore reprehenderit ipsa deleniti eum.
                 </div>
                 <div class="slider__info">
                     <div class="slider__name">John Doe 3</div>
                     <div class="slider__icons">
-                        <span class="slider__icon"></span>
-                        <span class="slider__icon"></span>
-                        <span class="slider__icon slider__icon--active"></span>
+                        <span class="slider__icon" data-id="1"></span>
+                        <span class="slider__icon" data-id="2"></span>
+                        <span class="slider__icon slider__icon--active" data-id="3"></span>
                     </div>
                 </div>
             </div>
@@ -315,6 +315,46 @@
         </section>
         <!-- /.features -->
 
+        <footer class="footer">
+            <div class="footer__header view-port">
+                <a class="footer__brand" href="index.html">GHost Host</a>
+                <ul class="footer__nav">
+                    <li class="nav__item"><a href="#" class="nav__link">home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">about us</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">block</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">policy</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__content view-port">
+                <div class="footer__block footer__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto officia vero, tenetur iure repellat error nisi consequatur aut consectetur blanditiis ratione sapiente iste, itaque dolor, illum voluptatibus nam laborum unde nulla quis soluta minus quisquam? Placeat, dolorem corporis iusto error molestiae aut labore, perspiciatis illo quo modi ullam alias similique.
+                </div>
+                <div class="footer__block footer__map">
+                    <ul class="footer__list">
+                        <li class="list__item"><i class="fas fa-angle-right list__icon"></i> <a href="#" class="list__link">Lorem, ipsum.</a></li>
+                        <li class="list__item"><i class="fas fa-angle-right list__icon"></i> <a href="#" class="list__link">Lorem, ipsum.</a></li>
+                        <li class="list__item"><i class="fas fa-angle-right list__icon"></i> <a href="#" class="list__link">Lorem, ipsum.</a></li>
+                        <li class="list__item"><i class="fas fa-angle-right list__icon"></i> <a href="#" class="list__link">Lorem, ipsum.</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="list__item"><i class="fas fa-angle-right list__icon"></i> <a href="#" class="list__link">Lorem, ipsum.</a></li>
+                        <li class="list__item"><i class="fas fa-angle-right list__icon"></i> <a href="#" class="list__link">Lorem, ipsum.</a></li>
+                        <li class="list__item"><i class="fas fa-angle-right list__icon"></i> <a href="#" class="list__link">Lorem, ipsum.</a></li>
+                        <li class="list__item"><i class="fas fa-angle-right list__icon"></i> <a href="#" class="list__link">Lorem, ipsum.</a></li>
+                    </ul>
+                </div>
+                <div class="footer__block footer__contact">
+                    <a class="contact__item" href="tel:0123456789"><i class="fas fa-phone contact__icon"></i> +0 123 456 78 9</a></p>
+                    <a class="contact__item" href="mailto:qwerty@example.com"><i class="fas fa-envelope contact__icon"></i> qwerty@example.com</a></p>
+                    <span class="contact__item">Lorem ipsum dolor sit amet.</span>
+                    <span class="contact__item">Lorem ipsum dolor sit amet.</span>
+                </div>
+            </div>
+        </footer>
+        <!-- /.footer -->
     </div>
+
+    <script src="js/slider.js"></script>
 </body>
 </html>
